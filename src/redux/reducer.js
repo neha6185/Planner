@@ -1,10 +1,11 @@
-import { PRODUCTS } from '../shared/products';
+import { PRODUCTS } from "../shared/products";
+import { EXPENSES } from "../shared/expenses";
 
 export const initialState = {
-    products: PRODUCTS,
-    
+  products: PRODUCTS,
+  expenses: EXPENSES,
 };
 
 export const Reducer = (state = initialState, action) => {
-    return state;
+  return state;
 };

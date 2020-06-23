@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Plot from "react-plotly.js";
+import { ModalBody, ModalHeader, Modal, ModalFooter, Button } from "reactstrap";
 
 class MarketGraph extends React.Component {
   constructor(props) {
@@ -9,17 +10,16 @@ class MarketGraph extends React.Component {
       stockYValue: [],
     };
   }
+
   componentDidMount() {
     this.fetchStock();
   }
   fetchStock() {
     const pointerToThis = this;
     console.log(pointerToThis);
-    const API_KEY = "Y6SUHRSJL92Y8380";
-    // let API_CALL = "";
-    // let API_CALL = `https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=BTC&to_currency=USD&apikey=${API_KEY}`;
-    //let API_CALL =`https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol=IBM&apikey=${API_KEY}`;
-    let API_CALL = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=compact&apikey=${API_KEY}`;
+    // cconst API_CALL = "";
+    // const API_KEY = "Y6SUHRSJL92Y8380";
+     let API_CALL = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=compact&apikey=Y6SUHRSJL92Y8380`;
     let stockxValueFunc = [];
     let stockyValueFunc = [];
     fetch(API_CALL)
@@ -28,8 +28,6 @@ class MarketGraph extends React.Component {
       })
       .then(function (data) {
         console.log(data);
-        //
-        //for(var key in data["Realtime Currency Exchange Rate"])
         for (var key in data["Time Series (Daily)"]) {
           stockxValueFunc.push(key);
           stockyValueFunc.push(data["Time Series (Daily)"][key]["1. open"]);
@@ -43,11 +41,21 @@ class MarketGraph extends React.Component {
   }
 
   render() {
+    //   const [modal, setModal] = useState(false);
+
+    // const toggleModal = () => setModal(!modal);
+    // const closeBtn = (
+    //   <Button className="close" onClick={toggleModal}>
+    //     &times;
+    //   </Button>
+    // );
     return (
       <div>
-        <h1>Stock Market</h1>
-        {/* <p>x value: {this.state.stockXValue}</p>
-        <p>y value: {this.state.stockYValue}</p> */}
+        {/* <Modal isOpen={modal} toggle={toggleModal}>
+          <ModalHeader toggle={toggleModal} close={closeBtn}>
+            Stock Performance
+          </ModalHeader>
+          <ModalBody> */}
         <Plot
           data={[
             {
@@ -58,8 +66,19 @@ class MarketGraph extends React.Component {
               marker: { color: "red" },
             },
           ]}
-          layout={{ width: 720, height: 440, title: "A Fancy Plot" }}
+          layout={{ width: 440, height: 440, title: "Performance" }}
         />
+        {/* </ModalBody>
+          <ModalFooter>
+            <Button color="secondary" onClick={toggleModal}>
+              Close
+            </Button>
+          </ModalFooter>
+        </Modal>
+         */}
+
+        {/* <p>x value: {this.state.stockXValue}</p>
+        <p>y value: {this.state.stockYValue}</p> */}
       </div>
     );
   }

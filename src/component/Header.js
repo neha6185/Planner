@@ -28,38 +28,30 @@ class Header extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Jumbotron fluid>
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <h1>Market: Beginning of Investment</h1>
-              </div>
-            </div>
-          </div>
-        </Jumbotron>
-
-        <Navbar dark sticky="top" expand="md">
-          <div className="container">
-            <NavbarBrand className="mr-auto" href="/">
-              Trade
-            </NavbarBrand>
+        <Navbar  sticky="top" expand="md">
+          <div className="container-fluid">
             <NavbarToggler onClick={this.toggleNav} />
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar>
                 <NavItem>
                   <NavLink className="nav-link" to="/home">
-                    <i className="fa fa-home fa-lg" /> Market
+                    <i className="fa fa-home fa-lg" /> Home
                   </NavLink>
                 </NavItem>
-
                 <NavItem>
-                  <NavLink className="nav-link" to="/purchaseStock">
-                    <i className="fa fa-info fa-lg" /> PlaceOrder
+                  <NavLink className="nav-link" to="/budget">
+                    <i className="fa fa-money fa-lg" /> Budget
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/portfolio">
-                    <i className="fa fa-info fa-lg" /> Portfolio
+                    <i className="fa fa-eye fa-lg" /> WatchList
+                  </NavLink>
+                </NavItem>
+                
+                <NavItem>
+                  <NavLink className="nav-link" to="/todo">
+                    <i className="fa fa-list fa-lg" /> My Tasks
                   </NavLink>
                 </NavItem>
                 <NavItem>
