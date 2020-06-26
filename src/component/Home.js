@@ -25,7 +25,7 @@ function Home() {
         <div className="col">
           <Card style={{ backgroundColor: "#0d47a1", borderColor: "primary " }}>
             <CardImg
-              src="images/pie2.jpg"
+              src="./images/pie2.jpg"
               alt="Expenses"
               className="align-self-center homeImg"
             />
@@ -41,7 +41,7 @@ function Home() {
         <div className="col ">
           <Card style={{ backgroundColor: "#0d47a1", borderColor: "primary " }}>
             <CardImg
-              src="images/graph.png"
+              src="./images/graph.png"
               alt="Portfolio"
               className="align-self-center homeImg"
             />
@@ -57,7 +57,7 @@ function Home() {
         <div className="col ">
           <Card style={{ backgroundColor: "#0d47a1", borderColor: "primary " }}>
             <CardImg
-              src="images/todo.jpg"
+              src="./images/todo.jpg"
               alt="To-do"
               className="align-self-center homeImg"
             />
