@@ -9,18 +9,17 @@ import {
   CardBody,
 } from "reactstrap";
 import { Control, Form, Errors } from "react-redux-form";
-import DatePickerComponent from "./DatePickerComponent";
+
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !val || val.length <= len;
 const minLength = (len) => (val) => val && val.length >= len;
 const isNumber = (val) => !isNaN(+val);
 const dateformat = (val) => {
-
+  
   var bits = val.split('/');
   var d = new Date(bits[2], bits[1] - 1, bits[0]);
-  // alert(d && (d.getMonth() + 1) == bits[1]);
-  return d && (d.getMonth() + 1) == bits[1];
+  return d && (d.getMonth() + 1) === parseInt(bits[1]);
 }
 
   

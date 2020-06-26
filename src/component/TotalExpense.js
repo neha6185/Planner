@@ -11,13 +11,13 @@ function TotalExpense({ items }) {
     const amounts = items.map((item) => item.amount);
     console.log(`Amount: ${amounts}`);
     // console.log(`Transaction Type ${}`);
-    const debits = items.filter((item) => item.transactiontype == 'Debit');
+    const debits = items.filter((item) => item.transactiontype === 'Debit');
     console.log(`Debits: ${debits}`);
     const expenses = debits.map((item) => item.amount);
 
     console.log(`Expenses: ${expenses}`);
     
-    const credits = items.filter((item) => item.transactiontype == 'Credit');
+    const credits = items.filter((item) => item.transactiontype === 'Credit');
     const income = credits.map(item => item.amount);
     console.log(`Income: ${income}`);
      if( income.length >0){

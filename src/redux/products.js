@@ -10,7 +10,7 @@ export const Products = (state = PRODUCTS, action) => {
       console.log("No. of shares",state.length);
       return state.concat(product);
     case ActionTypes.DELETE_PRODUCT:
-      var id = action.payload.id;
+      // var id = action.payload.id;
       return [...state.filter((product) => product.id !== action.payload.id)];
    
 

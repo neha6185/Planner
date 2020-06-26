@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import Plot from "react-plotly.js";
-import { ModalBody, ModalHeader, Modal, ModalFooter, Button } from "reactstrap";
 
 class MarketGraph extends React.Component {
   constructor(props) {

@@ -11,7 +11,7 @@ export const Expenses = (state = EXPENSES, action) => {
      
 
     case ActionTypes.DELETE_EXPENSE:
-      var id = action.payload.id;
+      // var id = action.payload.id;
       return [...state.filter((item) => item.id !== action.payload.id)];
 
     default:

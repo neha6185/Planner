@@ -2,11 +2,9 @@ import React from "react";
 import {
   Nav,
   Navbar,
-  NavbarBrand,
   NavbarToggler,
   Collapse,
-  NavItem,
-  Jumbotron,
+  NavItem
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 

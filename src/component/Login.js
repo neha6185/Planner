@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import {
   Button,
-  Label,
   Col,
   Row,
   Card,
@@ -35,9 +34,9 @@ class Login extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   authenticateUser(values){
-      const email=  values.email;
-      const pwd = values.pwd;
-      const user = this.state.users.filter(user => user.email === email);
+      // const email=  values.email;
+      // const pwd = values.pwd;
+      // const user = this.state.users.filter(user => user.email === email);
       
       
 

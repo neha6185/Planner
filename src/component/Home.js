@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardImg, Jumbotron, CardFooter, Button } from "reactstrap";
+import { Card, CardImg, CardFooter } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
