@@ -25,7 +25,7 @@ function Home() {
         <div className="col">
           <Card style={{ backgroundColor: "#0d47a1", borderColor: "primary " }}>
             <CardImg
-              src="../images/pie2.jpg"
+              src="https://cdn.mydollarplan.com/wp-content/uploads/2011/02/Pie-Chart.jpg"
               alt="Expenses"
               className="align-self-center homeImg"
             />
@@ -41,7 +41,7 @@ function Home() {
         <div className="col ">
           <Card style={{ backgroundColor: "#0d47a1", borderColor: "primary " }}>
             <CardImg
-              src="../images/graph.png"
+              src="https://media.ycharts.com/charts/d10a7141799f6642aaca8dbde7faa5c3.png"
               alt="Portfolio"
               className="align-self-center homeImg"
             />
@@ -57,7 +57,7 @@ function Home() {
         <div className="col ">
           <Card style={{ backgroundColor: "#0d47a1", borderColor: "primary " }}>
             <CardImg
-              src="../images/todo.jpg"
+              src="https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png"
               alt="To-do"
               className="align-self-center homeImg"
             />
