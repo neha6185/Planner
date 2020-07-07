@@ -1,5 +1,5 @@
 body {
-  
+
   font-family: "Open Sans", sans-serif;
   color: black;
   font-weight: 300;
@@ -12,10 +12,12 @@ h1,
 h3 {
   color: white;
 }
-h2{
-  
+
+h2 {
+
   color: #0d47a1;
 }
+
 h4,
 h6 {
   color: #29b6f6;
@@ -53,6 +55,7 @@ header {
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
+
 .jumbotron {
   margin: 0;
   padding: 30px;
@@ -64,10 +67,12 @@ header {
   align-content: center;
   justify-content: center;
 }
+
 .carouselhome {
   vertical-align: middle;
   margin: auto;
 }
+
 .jumbotron h2 {
   color: #cec8ff;
 }
@@ -76,6 +81,7 @@ header {
   background-color: #4fc3f7;
   color: black;
 }
+
 .nav-link {
   color: white;
 }
@@ -84,12 +90,14 @@ header {
   padding: 10px 0;
   text-align: center;
 }
-.home-container{
+
+.home-container {
   height: 300px;
   background-color: #4fc3f7;
   text-align: center;
   /* background-image: url("https://i.picsum.photos/id/370/4928/3264.jpg?hmac=UGe0txSnG4hhV-fAoi7e3mTnvQFhYYNcPJJbYFePh5Q"); */
 }
+
 .container-size {
   margin-top: 50px;
   margin-left: 300px;
@@ -98,6 +106,7 @@ header {
   text-align: center;
   vertical-align: middle;
 }
+
 footer {
   position: fixed;
   text-align: center;
@@ -105,7 +114,7 @@ footer {
   width: 100%;
   height: 2rem;
   background-color: #4fc3f7;
-  padding: 5px 5px;
+  padding: 50px 50px;
 }
 
 footer p {
@@ -128,6 +137,7 @@ form {
   padding: 0;
   font-weight: 300;
 }
+
 .note {
   background: #fff;
   border-radius: 7px;
@@ -137,20 +147,24 @@ form {
   margin: 16px;
   float: left;
 }
+
 .homeImg {
   width: 350px;
   height: 300px;
 }
+
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
 }
+
 .note p {
   font-size: 1.1em;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
 .note button {
   position: relative;
   float: right;
@@ -162,6 +176,7 @@ form {
   cursor: pointer;
   outline: none;
 }
+
 form textarea {
   width: 100%;
   border: none;
@@ -171,6 +186,7 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
+
 .todo-button {
   position: absolute;
   right: 18px;
@@ -185,6 +201,7 @@ form textarea {
   cursor: pointer;
   outline: none;
 }
+
 .form-area {
   position: relative;
   width: 350px;
