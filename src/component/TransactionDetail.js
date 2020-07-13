@@ -1,58 +1,52 @@
-import React from 'react';
- import {
-    Button,
-    Table,
-  } from "reactstrap";
+import React from "react";
+import { Button, Table } from "reactstrap";
 
 function TransactionDetail({ items, deleteItem }) {
-    //  const products = this.props.products;
-    console.log("ExpenseList :" + { items });
-    if (items != null) {
-      const list = items.map((item) => {
-        return (
-          <tr key={item.id}>
-            <td>{item.id}</td>
-            <td>{item.date}</td>
-            <td>{item.merchant}</td>
-            <td>{item.item}</td>
-            <td>{item.amount}</td>
-  
-            <td>
-              <Button
-                color="danger"
-                onClick={() => {
-                  deleteItem(item.id);
-                }}
-              >
-              <i className="fa fa-trash fa-lg" /> 
-              </Button>
-            </td>
-          </tr>
-        );
-      });
-  
+  //  const products = this.props.products;
+  console.log("ExpenseList :" + { items });
+  if (items != null) {
+    const list = items.map((item) => {
       return (
-        <div className="col">
-          {" "}
+        <tr key={item.id}>
+          <td>{item.id}</td>
+          <td>{item.date}</td>
+          <td>{item.merchant}</td>
+          <td>{item.item}</td>
+          <td>{item.amount}</td>
 
-              <Table striped responsive bordered >
-                <thead>
-                  <tr>
-                    <th scope="row">#</th>
-                    <th>Date</th>
-                    <th>Merchant</th>
-                    <th>Item</th>
-                    <th>Amount</th>
-                    <th>Remove</th>
-                  </tr>
-                </thead>
-                <tbody>{list}</tbody>
-              </Table>
-     
-        </div>
+          <td>
+            <Button
+              color="danger"
+              onClick={() => {
+                deleteItem(item.id);
+              }}
+            >
+              <i className="fa fa-trash fa-lg" />
+            </Button>
+          </td>
+        </tr>
       );
-    } else {
-      return <div />;
-    }
+    });
+
+    return (
+      <div className="col mt-5">
+        <Table striped responsive bordered className="mt-3">
+          <thead>
+            <tr className="thead">
+              <th scope="row">#</th>
+              <th>Date</th>
+              <th>Merchant</th>
+              <th>Item</th>
+              <th>Amount</th>
+              <th className="text-danger">Remove</th>
+            </tr>
+          </thead>
+          <tbody className="tbody">{list}</tbody>
+        </Table>
+      </div>
+    );
+  } else {
+    return <div />;
   }
-  export default TransactionDetail;
+}
+export default TransactionDetail;

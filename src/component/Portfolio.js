@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Table, Card, Collapse,ModalBody, ModalHeader, Modal, ModalFooter, Button } from "reactstrap";
+import {
+  Table,
+  Card,
+  Collapse,
+  ModalBody,
+  ModalHeader,
+  Modal,
+  ModalFooter,
+  Button,
+} from "reactstrap";
 import AddWatchList from "./AddWatchList";
 import MarketGraph from "./MarketGraph";
 // function showDetail(stockSymbol){
@@ -13,7 +22,7 @@ function Portfolio(props) {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const { products, deleteProduct } = props;
-  
+
   const [modal, setModal] = useState(false);
   const toggleModal = () => setModal(!modal);
   const closeBtn = (
@@ -25,7 +34,11 @@ function Portfolio(props) {
     return (
       <tr key={product.id}>
         {/* <td><Button onClick={()=>showDetail(product.stock)} color="primary"><i className="fa fa-plus fa-sm" /></Button></td> */}
-        <td><Button onClick={toggleModal} color="primary"><i className="fa fa-eye fa-sm" /></Button></td>
+        <td>
+          <Button onClick={toggleModal} color="primary">
+            <i className="fa fa-eye fa-sm" />
+          </Button>
+        </td>
         <Modal isOpen={modal} toggle={toggleModal}>
           <ModalHeader toggle={toggleModal} close={closeBtn}>
             Stock Performance
@@ -39,7 +52,7 @@ function Portfolio(props) {
             </Button>
           </ModalFooter>
         </Modal>
-        
+
         <td>{product.stock}</td>
         <td>{product.limitPrice}</td>
         <td>
@@ -60,14 +73,15 @@ function Portfolio(props) {
       <div className="container container-size">
         <div className="row">
           <div className="col">
-            <Card outline color="primary" className="align-center">
+            <Card outline color="primary" className="watchList-card">
               <div className="row">
                 <div className="col">
-                  <h4>My WatchList</h4>
+                  <h4 className="pt-1">
+                    M<small>Y</small> W<small>ATCHLIST</small>
+                  </h4>
                 </div>
                 <div className="col">
                   <Button onClick={toggle} color="primary">
-                    {" "}
                     <i className="fa fa-plus fa-lg" /> WatchList
                   </Button>
                 </div>
