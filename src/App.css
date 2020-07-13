@@ -33,13 +33,12 @@ h5 {
 }
 
 .card-login {
+  margin: auto;
   padding: 20px 0;
-  position: relative;
   text-align: center;
   max-width: 400px;
   border-radius: 20px;
-  margin: 0 auto;
-  vertical-align: middle;
+  border: 1px solid blue;
 }
 
 .loginButton {
@@ -102,7 +101,7 @@ header {
 
 @keyframes example {
   0% {
-    color: rgb(196, 152, 255);
+    color: rgb(110, 88, 235);
   }
 
   20% {
@@ -114,7 +113,7 @@ header {
   }
 
   80% {
-    color: rgb(248, 172, 248);
+    color: rgb(230, 172, 248);
   }
 
   100% {
@@ -305,24 +304,21 @@ form {
   font-weight: 300;
 }
 
+.task {
+  border-radius: 5px;
+  border: 1px solid blue;
+  max-width: 550px;
+}
+
 .note {
-  background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
   width: 240px;
-  margin: 16px;
+  margin: 36px 16px;
   float: left;
-}
-
-.homeImg {
-  width: 350px;
-  height: 300px;
-}
-
-.note h1 {
-  font-size: 1.1em;
-  margin-bottom: 6px;
+  color: #00ffff;
+  resize: none;
 }
 
 .note p {
@@ -336,14 +332,22 @@ form {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: white;
-  border: none;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  outline: none;
 }
 
+.todo-button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: blue;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  outline: none !important;
+}
+
+/* 
 form textarea {
   width: 100%;
   border: none;
@@ -352,22 +356,7 @@ form textarea {
   font-size: 1.2em;
   font-family: inherit;
   resize: none;
-}
-
-.todo-button {
-  position: absolute;
-  right: 18px;
-  bottom: -18px;
-  background: #29b6f6;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  outline: none;
-}
+} */
 
 .form-area {
   position: relative;
@@ -379,12 +368,12 @@ form textarea {
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
 
+
 .input-area {
   width: 100%;
   border: none;
   padding: 4px;
   outline: none;
   font-size: 1.2em;
-  font-family: inherit;
   resize: none;
 }

@@ -20,11 +20,10 @@ function TodoList() {
   }
 
   return (
-    <div className="container container-size">
-      <h4 className="mt-5">
+    <div className="container container-size task">
+      <h4>
         A<small>DD</small> T<small>ASK</small>
       </h4>
-
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem, index) => {
         return (

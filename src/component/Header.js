@@ -33,7 +33,7 @@ class Header extends React.Component {
                   src="https://www.clipartmax.com/png/middle/67-677318_we-pay-cash-money-bag-icon-blue.png"
                   width="60"
                 /> */}
-                <h4>ℙLåℕℕℰℜ</h4>
+                <h4>ℙLåℕℕℇℝ</h4>
               </NavLink>
               {/* <NavLink className="planner col-1 mt-1 ml-1" to="/home">
                 <h4>ℙLåℕℕℰℜ</h4>
@@ -56,7 +56,7 @@ class Header extends React.Component {
                 </NavLink>
               </span>
               <NavLink className="login ml-auto" to="/login">
-                <span>ℒOGⅈN</span>
+                <span>Logⅈn</span>
               </NavLink>
             </Collapse>
           </div>
