@@ -53,14 +53,11 @@ function Home() {
               alt="Expenses"
               className="align-self-center homeImg"
             />
-            <CardFooter>
-              <Link to="/budget" className="nav-link card-footer">
-                <i className="fa fa-money fa-lg" /> {"  "} Budget
-              </Link>
-            </CardFooter>
+            <Link to="/budget" className="nav-link card-footer mt-1 mb-1">
+              <i className="fa fa-money fa-lg" /> {"  "} Budget
+            </Link>
           </Card>
         </div>
-
         <div className="col box">
           <Card style={{ backgroundColor: "#107983", borderColor: "primary" }}>
             <CardImg
@@ -68,15 +65,12 @@ function Home() {
               alt="Portfolio"
               className="align-self-center homeImg"
             />
-            <CardFooter>
-              <Link to="/portfolio" className="nav-link card-footer">
-                <i className="fa fa-eye fa-lg" /> {"  "}
-                WatchList
-              </Link>
-            </CardFooter>
+            <Link to="/portfolio" className="nav-link card-footer mt-1 mb-1">
+              <i className="fa fa-eye fa-lg" /> {"  "}
+              WatchList
+            </Link>
           </Card>
         </div>
-
         <div className="col box">
           <Card style={{ backgroundColor: "#004d79", borderColor: "primary" }}>
             <CardImg
@@ -84,12 +78,10 @@ function Home() {
               alt="To-do"
               className="align-self-center homeImg"
             />
-            <CardFooter>
-              <Link to="/todo" className="nav-link card-footer">
-                <i className="fa fa-list fa-lg" /> {"  "}
-                My Tasks
-              </Link>
-            </CardFooter>
+            <Link to="/todo" className="nav-link card-footer mt-1 mb-1">
+              <i className="fa fa-list fa-lg" /> {"  "}
+              My Tasks
+            </Link>
           </Card>
         </div>
       </div>
