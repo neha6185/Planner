@@ -48,12 +48,7 @@ class Login extends Component {
       <div className="container container-size">
         <div className="row">
           <div className="col">
-            <Card
-              style={{
-                backgroundColor: "transparent",
-              }}
-              className="card-login"
-            >
+            <Card className="card-login">
               <CardTitle>
                 <h4 className="welcome">Welcome !</h4>
               </CardTitle>
@@ -131,7 +126,10 @@ class Login extends Component {
                   </div>
                 </LocalForm>
                 <h6>
-                  New User? <Link to="/registerUser">Sign Up</Link>
+                  New User?{" "}
+                  <Link to="/registerUser" className="signUp">
+                    Sign Up
+                  </Link>
                 </h6>
               </CardBody>
             </Card>

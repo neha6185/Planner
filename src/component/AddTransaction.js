@@ -10,34 +10,27 @@ import {
 } from "reactstrap";
 import { Control, Form, Errors } from "react-redux-form";
 
-
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !val || val.length <= len;
 const minLength = (len) => (val) => val && val.length >= len;
 const isNumber = (val) => !isNaN(+val);
 const dateformat = (val) => {
-  
-  var bits = val.split('/');
+  var bits = val.split("/");
   var d = new Date(bits[2], bits[1] - 1, bits[0]);
-  return d && (d.getMonth() + 1) === parseInt(bits[1]);
-}
-
-  
- 
+  return d && d.getMonth() + 1 === parseInt(bits[1]);
+};
 
 function AddTransaction(props) {
   // alert(JSON.stringify(props));
   // alert(props.items);
   return (
-   
-      <div className="row">
-        <AddTransactionForm
-          addExpense={props.addExpense}
-          resetTransactionForm={props.resetTransactionForm}
-          toggle={props.toggle}
-        />
-      </div>
-    
+    <div className="row">
+      <AddTransactionForm
+        addExpense={props.addExpense}
+        resetTransactionForm={props.resetTransactionForm}
+        toggle={props.toggle}
+      />
+    </div>
   );
 }
 class AddTransactionForm extends Component {
@@ -68,10 +61,9 @@ class AddTransactionForm extends Component {
       values.amount,
       values.transactiontype
     );
-   
+
     this.props.resetTransactionForm();
     this.props.toggle();
-
   };
 
   render() {
@@ -79,10 +71,8 @@ class AddTransactionForm extends Component {
       <div className="container ">
         <div className="row m-1">
           <div className="col ">
-            <Card
-              style={{ backgroundColor: "#e3f2fd", borderColor: "primary " }}
-            >
-              <CardHeader>Add Transactions</CardHeader>
+            <Card style={{ backgroundColor: "#72aed6" }}>
+              <CardHeader className="cardHeader">Add Transactions</CardHeader>
               <CardBody>
                 <Form
                   model="transactionForm"

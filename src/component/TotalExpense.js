@@ -32,7 +32,7 @@ function TotalExpense({ items }) {
     }
 
     return (
-      <Card outline color="primary" className="budget-card">
+      <Card outline color="info" className="budget-card">
         <CardTitle>
           <h4>
             B<small>ALANCE</small> S<small>UMMARY</small> :{" "}

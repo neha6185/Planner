@@ -29,7 +29,7 @@ function TransactionDetail({ items, deleteItem }) {
     });
 
     return (
-      <div className="col mt-5">
+      <div className="col mt-5 mb-5">
         <Table striped responsive bordered className="mt-3">
           <thead>
             <tr className="thead">

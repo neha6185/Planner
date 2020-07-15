@@ -28,13 +28,20 @@ class Header extends React.Component {
               navbar
               className="row navBar"
             >
-              <NavLink className="planner col-2 ml-1 d-flex" to="/home">
-                {/* <img
+              {/* <img
+                // src="https://cdn1.iconfinder.com/data/icons/business-management-and-growth-1-6/65/11-512.png"
+                src="https://cdn1.iconfinder.com/data/icons/accounting-26/64/money-income-growth-coin-graph-512.png"
+                alt="cash-icon"
+                className="icon"
+              /> */}
+              <NavLink className="planner col-2" to="/home">
+                <h1>P𝖑ånner</h1>
+              </NavLink>
+
+              {/* <img
                   src="https://www.clipartmax.com/png/middle/67-677318_we-pay-cash-money-bag-icon-blue.png"
                   width="60"
                 /> */}
-                <h4>ℙLåℕℕℇℝ</h4>
-              </NavLink>
               {/* <NavLink className="planner col-1 mt-1 ml-1" to="/home">
                 <h4>ℙLåℕℕℰℜ</h4>
                 <img

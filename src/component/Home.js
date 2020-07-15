@@ -8,17 +8,12 @@ function Home() {
     <div className="container-fluid home-container">
       <div className="row">
         <div className="col mt-5">
-          {/* <img
-            src="https://cdn1.iconfinder.com/data/icons/business-management-and-growth-1-6/65/11-512.png"
-            width="76"
-            alt="cash-icon"
-          /> */}
           <h3 className="what">
-            What’s In Your <span className="wallet">Wallet</span>💲
+            What’s In Your <span className="wallet">Wallet</span> ?
           </h3>
           <img
-            src="https://cdn4.iconfinder.com/data/icons/business-bicolor-2/512/cash-512.png"
-            width="130"
+            src="https://cdn1.iconfinder.com/data/icons/accounting-26/64/balance-scale-tax-money-business-512.png"
+            width="180"
             alt="cash-icon"
           />
           {/* <h4 className="plan-future">
@@ -46,7 +41,7 @@ function Home() {
           marginRight: 100,
         }}
       >
-        <div className="col box">
+        <div className="col-12 col-lg-4 mb-2 box">
           <Card style={{ backgroundColor: "#29aab6", borderColor: "primary" }}>
             <CardImg
               src="https://cdn.mydollarplan.com/wp-content/uploads/2011/02/Pie-Chart.jpg"
@@ -58,7 +53,7 @@ function Home() {
             </Link>
           </Card>
         </div>
-        <div className="col box">
+        <div className="col-12 col-lg-4 mb-2 box">
           <Card style={{ backgroundColor: "#107983", borderColor: "primary" }}>
             <CardImg
               src="https://media.ycharts.com/charts/d10a7141799f6642aaca8dbde7faa5c3.png"
@@ -71,7 +66,7 @@ function Home() {
             </Link>
           </Card>
         </div>
-        <div className="col box">
+        <div className="col-12 col-lg-4 mb-lg-2 mb-5 box">
           <Card style={{ backgroundColor: "#004d79", borderColor: "primary" }}>
             <CardImg
               src="https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png"

@@ -6,8 +6,6 @@ body {
   color: white;
   font-weight: 300;
   background: #0e1b2e;
-  width: 100%;
-  height: 100%;
 }
 
 .overlay {
@@ -38,7 +36,20 @@ h5 {
   text-align: center;
   max-width: 400px;
   border-radius: 20px;
-  border: 1px solid blue;
+  border: 12px solid rgba(187, 187, 187, 0.89);
+  border-bottom-width: 4px;
+  border-top-width: 4px;
+  background-color: rgba(0, 255, 255, 0.15);
+
+}
+
+.signUp {
+  color: #00ffff;
+}
+
+.signUp:hover {
+  color: #eee;
+  text-decoration: none;
 }
 
 .loginButton {
@@ -79,28 +90,46 @@ header {
 }
 
 .navbar {
-  font-family: "Bellefair", serif;
+  background-image: repeating-linear-gradient(67deg, rgba(0, 0, 0, 0.11) 0px, rgba(0, 0, 0, 0.11) 12px, rgba(1, 1, 1, 0.16) 12px, rgba(1, 1, 1, 0.16) 24px, rgba(0, 0, 0, 0.14) 24px, rgba(0, 0, 0, 0.14) 36px, rgba(0, 0, 0, 0.23) 36px, rgba(0, 0, 0, 0.23) 48px, rgba(0, 0, 0, 0.12) 48px, rgba(0, 0, 0, 0.12) 60px, rgba(1, 1, 1, 0.07) 60px, rgba(1, 1, 1, 0.07) 72px, rgba(0, 0, 0, 0.21) 72px, rgba(0, 0, 0, 0.21) 84px, rgba(0, 0, 0, 0.24) 84px, rgba(0, 0, 0, 0.24) 96px, rgba(1, 1, 1, 0.23) 96px, rgba(1, 1, 1, 0.23) 108px, rgba(1, 1, 1, 0.07) 108px, rgba(1, 1, 1, 0.07) 120px, rgba(0, 0, 0, 0.01) 120px, rgba(0, 0, 0, 0.01) 132px, rgba(1, 1, 1, 0.22) 132px, rgba(1, 1, 1, 0.22) 144px, rgba(1, 1, 1, 0.24) 144px, rgba(1, 1, 1, 0.24) 156px, rgba(0, 0, 0, 0) 156px, rgba(0, 0, 0, 0) 168px, rgba(0, 0, 0, 0.12) 168px, rgba(0, 0, 0, 0.12) 180px),
+    repeating-linear-gradient(157deg, rgba(1, 1, 1, 0.01) 0px, rgba(1, 1, 1, 0.01) 12px, rgba(1, 1, 1, 0.15) 12px, rgba(1, 1, 1, 0.15) 24px, rgba(0, 0, 0, 0.09) 24px, rgba(0, 0, 0, 0.09) 36px, rgba(0, 0, 0, 0.02) 36px, rgba(0, 0, 0, 0.02) 48px, rgba(0, 0, 0, 0.1) 48px, rgba(0, 0, 0, 0.1) 60px, rgba(1, 1, 1, 0.07) 60px, rgba(1, 1, 1, 0.07) 72px, rgba(1, 1, 1, 0.15) 72px, rgba(1, 1, 1, 0.15) 84px, rgba(0, 0, 0, 0.18) 84px, rgba(0, 0, 0, 0.18) 96px, rgba(1, 1, 1, 0.15) 96px, rgba(1, 1, 1, 0.15) 108px, rgba(1, 1, 1, 0.09) 108px, rgba(1, 1, 1, 0.09) 120px, rgba(1, 1, 1, 0.07) 120px, rgba(1, 1, 1, 0.07) 132px, rgba(1, 1, 1, 0.05) 132px, rgba(1, 1, 1, 0.05) 144px, rgba(0, 0, 0, 0.1) 144px, rgba(0, 0, 0, 0.1) 156px, rgba(1, 1, 1, 0.18) 156px, rgba(1, 1, 1, 0.18) 168px),
+    repeating-linear-gradient(112deg, rgba(0, 0, 0, 0.24) 0px, rgba(0, 0, 0, 0.24) 16px, rgba(1, 1, 1, 0.06) 16px, rgba(1, 1, 1, 0.06) 32px, rgba(0, 0, 0, 0.16) 32px, rgba(0, 0, 0, 0.16) 48px, rgba(1, 1, 1, 0) 48px, rgba(1, 1, 1, 0) 64px, rgba(1, 1, 1, 0.12) 64px, rgba(1, 1, 1, 0.12) 80px, rgba(1, 1, 1, 0.22) 80px, rgba(1, 1, 1, 0.22) 96px, rgba(0, 0, 0, 0.24) 96px, rgba(0, 0, 0, 0.24) 112px, rgba(0, 0, 0, 0.25) 112px, rgba(0, 0, 0, 0.25) 128px, rgba(1, 1, 1, 0.12) 128px, rgba(1, 1, 1, 0.12) 144px, rgba(0, 0, 0, 0.18) 144px, rgba(0, 0, 0, 0.18) 160px, rgba(1, 1, 1, 0.03) 160px, rgba(1, 1, 1, 0.03) 176px, rgba(1, 1, 1, 0.1) 176px, rgba(1, 1, 1, 0.1) 192px),
+    repeating-linear-gradient(202deg, rgba(1, 1, 1, 0.18) 0px, rgba(1, 1, 1, 0.18) 3px, rgba(0, 0, 0, 0.09) 3px, rgba(0, 0, 0, 0.09) 6px, rgba(0, 0, 0, 0.08) 6px, rgba(0, 0, 0, 0.08) 9px, rgba(1, 1, 1, 0.05) 9px, rgba(1, 1, 1, 0.05) 12px, rgba(0, 0, 0, 0.01) 12px, rgba(0, 0, 0, 0.01) 15px, rgba(1, 1, 1, 0.12) 15px, rgba(1, 1, 1, 0.12) 18px, rgba(0, 0, 0, 0.05) 18px, rgba(0, 0, 0, 0.05) 21px, rgba(1, 1, 1, 0.16) 21px, rgba(1, 1, 1, 0.16) 24px, rgba(1, 1, 1, 0.07) 24px, rgba(1, 1, 1, 0.07) 27px, rgba(1, 1, 1, 0.23) 27px, rgba(1, 1, 1, 0.23) 30px, rgba(0, 0, 0, 0.2) 30px, rgba(0, 0, 0, 0.2) 33px, rgba(0, 0, 0, 0.18) 33px, rgba(0, 0, 0, 0.18) 36px, rgba(1, 1, 1, 0.12) 36px, rgba(1, 1, 1, 0.12) 39px, rgba(1, 1, 1, 0.13) 39px, rgba(1, 1, 1, 0.13) 42px, rgba(1, 1, 1, 0.2) 42px, rgba(1, 1, 1, 0.2) 45px, rgba(1, 1, 1, 0.18) 45px, rgba(1, 1, 1, 0.18) 48px, rgba(0, 0, 0, 0.2) 48px, rgba(0, 0, 0, 0.2) 51px, rgba(1, 1, 1, 0) 51px, rgba(1, 1, 1, 0) 54px, rgba(0, 0, 0, 0.03) 54px, rgba(0, 0, 0, 0.03) 57px, rgba(1, 1, 1, 0.06) 57px, rgba(1, 1, 1, 0.06) 60px, rgba(1, 1, 1, 0) 60px, rgba(1, 1, 1, 0) 63px, rgba(0, 0, 0, 0.1) 63px, rgba(0, 0, 0, 0.1) 66px, rgba(1, 1, 1, 0.19) 66px, rgba(1, 1, 1, 0.19) 69px),
+    linear-gradient(157deg, rgb(25, 28, 34), rgb(46, 53, 74));
+  font-family: "Bellefair",
+    serif;
   font-weight: 600;
   letter-spacing: 1.5px;
-  border-bottom: 0.2px solid #00ffff;
+  border-bottom: 0.2px solid #00ffffca;
 }
 
-.planner h4 {
-  color: #00ffff;
+/* 
+.icon {
+  width: 120px;
+  position: fixed;
+  top: 0;
+  left: 140px;
+} */
+
+.planner h1 {
+  color: #83edfb;
+  position: fixed;
+  top: 1px;
+  font-size: 2rem;
+  border-bottom: 0.2px solid #00ffffca;
 }
 
 .planner:hover {
   text-decoration: none;
 }
 
-.planner h4:hover {
+.planner h1:hover {
   color: rgb(184, 207, 205);
   animation: example 5s infinite;
 }
 
 @keyframes example {
   0% {
-    color: rgb(110, 88, 235);
+    color: #00b6b6;
   }
 
   20% {
@@ -112,11 +141,11 @@ header {
   }
 
   80% {
-    color: rgb(230, 172, 248);
+    color: rgb(134, 87, 209);
   }
 
   100% {
-    color: rgb(205, 152, 255);
+    color: rgb(132, 0, 255);
   }
 }
 
@@ -136,37 +165,44 @@ header {
   color: #9cdaf7;
 }
 
+.Modal {
+  margin-top: 100px;
+}
+
+.modalHeader {
+  background-color: #72aed6;
+}
+
+.modalHeader h4 {
+  color: #fff;
+  font-weight: bold;
+}
+
 .container {
   padding: 10px 0;
   text-align: center;
 }
 
 .home-container {
-  height: 500px;
-  /* background-image: repeating-linear-gradient(449deg, rgb(14, 27, 46) 0px, transparent 7px, rgb(14, 27, 46) 12px, transparent 19px, rgb(14, 27, 46) 24px, transparent 31px, rgb(14, 27, 46) 36px),
-    repeating-linear-gradient(199deg, rgb(14, 27, 46) 0px, transparent 7px, rgb(14, 27, 46) 12px, transparent 19px, rgb(14, 27, 46) 24px, transparent 31px, rgb(14, 27, 46) 36px),
-    repeating-linear-gradient(156deg, rgb(14, 27, 46) 0px, transparent 7px, rgb(14, 27, 46) 12px, transparent 19px, rgb(14, 27, 46) 24px, transparent 31px, rgb(14, 27, 46) 36px),
-    linear-gradient(246deg, rgb(2, 75, 134), rgb(2, 75, 134)); */
-
-  background-image: radial-gradient(
-    circle at top left,
-    rgba(25, 73, 156, 0.5) 0%,
-    rgb(25, 72, 156, 0.5) 5%,
-    rgb(37, 91, 169, 0.5) 5%,
-    rgb(37, 91, 169, 0.5) 10%,
-    rgb(64, 107, 156, 0.5) 10%,
-    rgb(42, 103, 173, 0.5) 15%,
-    rgb(24, 89, 152, 0.5) 15%,
-    rgb(24, 89, 152, 0.5) 20%,
-    rgb(19, 72, 117, 0.5) 20%,
-    rgb(19, 72, 117, 0.5) 25%,
-    rgb(5, 53, 89, 0.5) 25%,
-    rgb(5, 53, 89, 0.5) 30%,
-    rgb(8, 43, 69, 0.5) 30%,
-    rgb(8, 43, 69, 0.5) 35%,
-    rgb(10, 32, 50, 0.5) 35%,
-    rgb(10, 32, 50, 0.5) 100%
-  );
+  height: 450px;
+  background-size: 250%;
+  background-image: radial-gradient(circle at top left,
+      rgba(25, 73, 156, 0.5) 0%,
+      rgb(25, 72, 156, 0.5) 5%,
+      rgb(37, 91, 169, 0.5) 5%,
+      rgb(37, 91, 169, 0.5) 10%,
+      rgb(64, 107, 156, 0.5) 10%,
+      rgb(42, 103, 173, 0.5) 15%,
+      rgb(24, 89, 152, 0.5) 15%,
+      rgb(24, 89, 152, 0.5) 20%,
+      rgb(19, 72, 117, 0.5) 20%,
+      rgb(19, 72, 117, 0.5) 25%,
+      rgb(5, 53, 89, 0.5) 25%,
+      rgb(5, 53, 89, 0.5) 30%,
+      rgb(8, 43, 69, 0.5) 30%,
+      rgb(8, 43, 69, 0.5) 35%,
+      rgb(10, 32, 50, 0.5) 35%,
+      rgb(10, 32, 50, 0.5) 100%);
   text-align: center;
 }
 
@@ -218,91 +254,23 @@ tbody {
 }
 
 footer {
-  height: 2rem;
+  height: 3rem;
   position: fixed;
   text-align: center;
   bottom: 0;
   width: 100%;
-  background-image: linear-gradient(
-      222deg,
-      rgba(163, 163, 163, 0.09) 0%,
-      rgba(163, 163, 163, 0.09) 33.3%,
-      rgba(100, 100, 100, 0.09) 33.3%,
-      rgba(100, 100, 100, 0.09) 66.6%,
-      rgba(162, 162, 162, 0.09) 66.6%,
-      rgba(162, 162, 162, 0.09) 99%
-    ),
-    linear-gradient(
-      352deg,
-      rgba(193, 193, 193, 0.06) 0%,
-      rgba(193, 193, 193, 0.06) 33.3%,
-      rgba(169, 169, 169, 0.06) 33.3%,
-      rgba(169, 169, 169, 0.06) 66.6%,
-      rgba(92, 92, 92, 0.06) 66.6%,
-      rgba(92, 92, 92, 0.06) 99%
-    ),
-    linear-gradient(
-      146deg,
-      rgba(45, 45, 45, 0.03) 0%,
-      rgba(45, 45, 45, 0.03) 33.3%,
-      rgba(223, 223, 223, 0.03) 33.3%,
-      rgba(223, 223, 223, 0.03) 66.6%,
-      rgba(173, 173, 173, 0.03) 66.6%,
-      rgba(173, 173, 173, 0.03) 99%
-    ),
-    linear-gradient(
-      374deg,
-      rgba(226, 226, 226, 0.06) 0%,
-      rgba(226, 226, 226, 0.06) 33.3%,
-      rgba(81, 81, 81, 0.06) 33.3%,
-      rgba(81, 81, 81, 0.06) 66.6%,
-      rgba(186, 186, 186, 0.06) 66.6%,
-      rgba(186, 186, 186, 0.06) 99%
-    ),
-    linear-gradient(
-      179deg,
-      rgba(225, 225, 225, 0.04) 0%,
-      rgba(225, 225, 225, 0.04) 33.3%,
-      rgba(95, 95, 95, 0.04) 33.3%,
-      rgba(95, 95, 95, 0.04) 66.6%,
-      rgba(39, 39, 39, 0.04) 66.6%,
-      rgba(39, 39, 39, 0.04) 99%
-    ),
-    linear-gradient(
-      223deg,
-      rgba(184, 184, 184, 0.06) 0%,
-      rgba(184, 184, 184, 0.06) 33.3%,
-      rgba(0, 0, 0, 0.06) 33.3%,
-      rgba(0, 0, 0, 0.06) 66.6%,
-      rgba(140, 140, 140, 0.06) 66.6%,
-      rgba(140, 140, 140, 0.06) 99.89999999999999%
-    ),
-    linear-gradient(
-      417deg,
-      rgba(40, 40, 40, 0.07) 0%,
-      rgba(40, 40, 40, 0.07) 33.3%,
-      rgba(214, 214, 214, 0.07) 33.3%,
-      rgba(214, 214, 214, 0.07) 66.6%,
-      rgba(190, 190, 190, 0.07) 66.6%,
-      rgba(190, 190, 190, 0.07) 99.89999999999999%
-    ),
-    linear-gradient(
-      155deg,
-      rgba(230, 230, 230, 0) 0%,
-      rgba(230, 230, 230, 0) 33.3%,
-      rgba(241, 241, 241, 0) 33.3%,
-      rgba(241, 241, 241, 0) 66.6%,
-      rgba(55, 55, 55, 0) 66.6%,
-      rgba(55, 55, 55, 0) 99%
-    ),
-    linear-gradient(94deg, rgb(0, 79, 116), rgb(14, 27, 46));
-  opacity: 0.65;
-  padding: 5px;
+  background-image: repeating-linear-gradient(67deg, rgba(0, 0, 0, 0.11) 0px, rgba(0, 0, 0, 0.11) 12px, rgba(1, 1, 1, 0.16) 12px, rgba(1, 1, 1, 0.16) 24px, rgba(0, 0, 0, 0.14) 24px, rgba(0, 0, 0, 0.14) 36px, rgba(0, 0, 0, 0.23) 36px, rgba(0, 0, 0, 0.23) 48px, rgba(0, 0, 0, 0.12) 48px, rgba(0, 0, 0, 0.12) 60px, rgba(1, 1, 1, 0.07) 60px, rgba(1, 1, 1, 0.07) 72px, rgba(0, 0, 0, 0.21) 72px, rgba(0, 0, 0, 0.21) 84px, rgba(0, 0, 0, 0.24) 84px, rgba(0, 0, 0, 0.24) 96px, rgba(1, 1, 1, 0.23) 96px, rgba(1, 1, 1, 0.23) 108px, rgba(1, 1, 1, 0.07) 108px, rgba(1, 1, 1, 0.07) 120px, rgba(0, 0, 0, 0.01) 120px, rgba(0, 0, 0, 0.01) 132px, rgba(1, 1, 1, 0.22) 132px, rgba(1, 1, 1, 0.22) 144px, rgba(1, 1, 1, 0.24) 144px, rgba(1, 1, 1, 0.24) 156px, rgba(0, 0, 0, 0) 156px, rgba(0, 0, 0, 0) 168px, rgba(0, 0, 0, 0.12) 168px, rgba(0, 0, 0, 0.12) 180px),
+    repeating-linear-gradient(157deg, rgba(1, 1, 1, 0.01) 0px, rgba(1, 1, 1, 0.01) 12px, rgba(1, 1, 1, 0.15) 12px, rgba(1, 1, 1, 0.15) 24px, rgba(0, 0, 0, 0.09) 24px, rgba(0, 0, 0, 0.09) 36px, rgba(0, 0, 0, 0.02) 36px, rgba(0, 0, 0, 0.02) 48px, rgba(0, 0, 0, 0.1) 48px, rgba(0, 0, 0, 0.1) 60px, rgba(1, 1, 1, 0.07) 60px, rgba(1, 1, 1, 0.07) 72px, rgba(1, 1, 1, 0.15) 72px, rgba(1, 1, 1, 0.15) 84px, rgba(0, 0, 0, 0.18) 84px, rgba(0, 0, 0, 0.18) 96px, rgba(1, 1, 1, 0.15) 96px, rgba(1, 1, 1, 0.15) 108px, rgba(1, 1, 1, 0.09) 108px, rgba(1, 1, 1, 0.09) 120px, rgba(1, 1, 1, 0.07) 120px, rgba(1, 1, 1, 0.07) 132px, rgba(1, 1, 1, 0.05) 132px, rgba(1, 1, 1, 0.05) 144px, rgba(0, 0, 0, 0.1) 144px, rgba(0, 0, 0, 0.1) 156px, rgba(1, 1, 1, 0.18) 156px, rgba(1, 1, 1, 0.18) 168px),
+    repeating-linear-gradient(112deg, rgba(0, 0, 0, 0.24) 0px, rgba(0, 0, 0, 0.24) 16px, rgba(1, 1, 1, 0.06) 16px, rgba(1, 1, 1, 0.06) 32px, rgba(0, 0, 0, 0.16) 32px, rgba(0, 0, 0, 0.16) 48px, rgba(1, 1, 1, 0) 48px, rgba(1, 1, 1, 0) 64px, rgba(1, 1, 1, 0.12) 64px, rgba(1, 1, 1, 0.12) 80px, rgba(1, 1, 1, 0.22) 80px, rgba(1, 1, 1, 0.22) 96px, rgba(0, 0, 0, 0.24) 96px, rgba(0, 0, 0, 0.24) 112px, rgba(0, 0, 0, 0.25) 112px, rgba(0, 0, 0, 0.25) 128px, rgba(1, 1, 1, 0.12) 128px, rgba(1, 1, 1, 0.12) 144px, rgba(0, 0, 0, 0.18) 144px, rgba(0, 0, 0, 0.18) 160px, rgba(1, 1, 1, 0.03) 160px, rgba(1, 1, 1, 0.03) 176px, rgba(1, 1, 1, 0.1) 176px, rgba(1, 1, 1, 0.1) 192px),
+    repeating-linear-gradient(202deg, rgba(1, 1, 1, 0.18) 0px, rgba(1, 1, 1, 0.18) 3px, rgba(0, 0, 0, 0.09) 3px, rgba(0, 0, 0, 0.09) 6px, rgba(0, 0, 0, 0.08) 6px, rgba(0, 0, 0, 0.08) 9px, rgba(1, 1, 1, 0.05) 9px, rgba(1, 1, 1, 0.05) 12px, rgba(0, 0, 0, 0.01) 12px, rgba(0, 0, 0, 0.01) 15px, rgba(1, 1, 1, 0.12) 15px, rgba(1, 1, 1, 0.12) 18px, rgba(0, 0, 0, 0.05) 18px, rgba(0, 0, 0, 0.05) 21px, rgba(1, 1, 1, 0.16) 21px, rgba(1, 1, 1, 0.16) 24px, rgba(1, 1, 1, 0.07) 24px, rgba(1, 1, 1, 0.07) 27px, rgba(1, 1, 1, 0.23) 27px, rgba(1, 1, 1, 0.23) 30px, rgba(0, 0, 0, 0.2) 30px, rgba(0, 0, 0, 0.2) 33px, rgba(0, 0, 0, 0.18) 33px, rgba(0, 0, 0, 0.18) 36px, rgba(1, 1, 1, 0.12) 36px, rgba(1, 1, 1, 0.12) 39px, rgba(1, 1, 1, 0.13) 39px, rgba(1, 1, 1, 0.13) 42px, rgba(1, 1, 1, 0.2) 42px, rgba(1, 1, 1, 0.2) 45px, rgba(1, 1, 1, 0.18) 45px, rgba(1, 1, 1, 0.18) 48px, rgba(0, 0, 0, 0.2) 48px, rgba(0, 0, 0, 0.2) 51px, rgba(1, 1, 1, 0) 51px, rgba(1, 1, 1, 0) 54px, rgba(0, 0, 0, 0.03) 54px, rgba(0, 0, 0, 0.03) 57px, rgba(1, 1, 1, 0.06) 57px, rgba(1, 1, 1, 0.06) 60px, rgba(1, 1, 1, 0) 60px, rgba(1, 1, 1, 0) 63px, rgba(0, 0, 0, 0.1) 63px, rgba(0, 0, 0, 0.1) 66px, rgba(1, 1, 1, 0.19) 66px, rgba(1, 1, 1, 0.19) 69px),
+    linear-gradient(157deg, rgb(25, 28, 34), rgb(46, 53, 74));
+  border-top: 1px solid rgba(0, 255, 255, 0.4);
 }
 
 footer p {
   color: #ddd;
-  margin-top: 10px;
+  margin: auto;
+  padding: 10px 0;
 }
 
 form {
@@ -324,7 +292,7 @@ form {
 
 .task {
   border-radius: 5px;
-  border: 1px solid blue;
+  border: .1px solid #18a0a5;
   max-width: 550px;
 }
 
@@ -335,13 +303,15 @@ form {
 
 .note {
   border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
+  box-shadow: 0 2px 5px #18a0a5;
   padding: 10px;
   width: 240px;
   margin: 36px 16px;
   float: left;
   color: #00ffff;
   resize: none;
+  border: .1px solid #18a0a5;
+
 }
 
 .note p {
@@ -388,6 +358,9 @@ form textarea {
   padding: 15px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
+  border: 20px solid #72aed6;
+  border-bottom-width: 7px;
+  border-top-width: 7px;
 }
 
 .input-area {
@@ -397,4 +370,8 @@ form textarea {
   outline: none;
   font-size: 1.2em;
   resize: none;
+}
+
+.cardHeader {
+  font-weight: bold;
 }

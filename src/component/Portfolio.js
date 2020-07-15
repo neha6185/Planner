@@ -39,15 +39,19 @@ function Portfolio(props) {
             <i className="fa fa-eye fa-sm" />
           </Button>
         </td>
-        <Modal isOpen={modal} toggle={toggleModal}>
-          <ModalHeader toggle={toggleModal} close={closeBtn}>
-            Stock Performance
+        <Modal isOpen={modal} toggle={toggleModal} className="Modal">
+          <ModalHeader
+            toggle={toggleModal}
+            close={closeBtn}
+            className="modalHeader"
+          >
+            <h4>Stock Performance</h4>
           </ModalHeader>
           <ModalBody>
             <MarketGraph />
           </ModalBody>
-          <ModalFooter>
-            <Button color="secondary" onClick={toggleModal}>
+          <ModalFooter className="modalHeader">
+            <Button color="primary" onClick={toggleModal}>
               Close
             </Button>
           </ModalFooter>
@@ -73,7 +77,7 @@ function Portfolio(props) {
       <div className="container container-size">
         <div className="row">
           <div className="col">
-            <Card outline color="primary" className="watchList-card">
+            <Card outline color="info" className="watchList-card">
               <div className="row">
                 <div className="col">
                   <h4 className="pt-1">
@@ -91,8 +95,15 @@ function Portfolio(props) {
                   <Collapse isOpen={isOpen}>
                     <Card
                       style={{
-                        backgroundColor: "#e3f2fd",
+                        backgroundColor: "#72aed6",
                         borderColor: "primary ",
+                        marginLeft: "16px",
+                        marginRight: "16px",
+                        marginTop: "20px",
+                        marginBottom: "6px",
+                        border: "20px solid white",
+                        borderTopWidth: "8px",
+                        borderBottomWidth: "8px",
                       }}
                     >
                       <AddWatchList
@@ -109,7 +120,6 @@ function Portfolio(props) {
         </div>
         <div className="row mt-5">
           <div className="col">
-            {" "}
             <Table striped responsive>
               <thead>
                 <tr>
