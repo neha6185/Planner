@@ -11,7 +11,6 @@ import {
 import { Control, LocalForm, Errors } from "react-redux-form";
 import { Link } from "react-router-dom";
 
-
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !val || val.length <= len;
 const minLength = (len) => (val) => val && val.length >= len;
@@ -39,17 +38,17 @@ class Register extends Component {
 
   handleSubmit = (values) => {
     console.log("Current state is: " + JSON.stringify(values));
-    this.props.addUser(values.email,values.password);
+    this.props.addUser(values.email, values.password);
     alert("Successfully Added");
     // const newUser = {
     //     id: this.state.users.length,
     //     email: values.email,
     //     password: values.password
     //   };
-  
+
     //   const users = [...this.state.users];
     //   users.push(newUser);
-      
+
     //   this.setState(
     //     {
     //       users: users,
@@ -59,26 +58,21 @@ class Register extends Component {
     //     () => {
     //       alert("Current state is: " + JSON.stringify(this.state));
     //     });
-    };
-
-    
+  };
 
   render() {
     return (
       <div className="container container-size">
         <div className="row">
           <div className="col">
-            <Card
-              style={{ backgroundColor: "#e3f2fd", borderColor: "primary " }}
-              className="card-login"
-            >
+            <Card className="card-login">
               <CardSubtitle>
-                <h5>Sign Up for free</h5>
+                <h5 className="mt-3">Sign up for free !</h5>
               </CardSubtitle>
               <CardBody>
                 <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
-                  <Row className="form-group">
-                    <Col>
+                  <div className="row justify-content-center form-group">
+                    <div className="col-11">
                       <Control.text
                         model=".email"
                         id="email"
@@ -100,10 +94,10 @@ class Register extends Component {
                           validateEmail: "Invalid email id",
                         }}
                       />
-                    </Col>
-                  </Row>
-                  <Row className="form-group">
-                    <Col>
+                    </div>
+                  </div>
+                  <div className="row justify-content-center form-group">
+                    <div className="col-11">
                       <Control.text
                         model=".password"
                         id="password"
@@ -127,10 +121,10 @@ class Register extends Component {
                           maxLength: "Must be 15 characters or less",
                         }}
                       />
-                    </Col>
-                  </Row>
-                  <Row className="form-group">
-                    <Col>
+                    </div>
+                  </div>
+                  <div className="row justify-content-center form-group">
+                    <div className="col-11 mt-3">
                       <Button
                         type="submit"
                         color="primary"
@@ -138,14 +132,16 @@ class Register extends Component {
                       >
                         Sign Up
                       </Button>
-                    </Col>
-                  </Row>
+                    </div>
+                  </div>
                 </LocalForm>
+                <h6>
+                  Already have an account? {"   "}
+                  <Link to="/login" className="signUp">
+                    Log In
+                  </Link>
+                </h6>
               </CardBody>
-              <CardFooter>
-                Already have an account ?  {"   "}
-                <Link to="/login">Log In</Link>
-              </CardFooter>
             </Card>
           </div>
         </div>

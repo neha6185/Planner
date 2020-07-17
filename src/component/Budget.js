@@ -45,7 +45,6 @@ function MyNav(props) {
       <div className="row m-3">
         <div className="col">
           <Button onClick={toggle} color="primary">
-            {" "}
             <i className="fa fa-plus fa-lg" /> New Transaction
           </Button>
         </div>
@@ -58,14 +57,12 @@ function MyNav(props) {
 
       <Collapse isOpen={isOpen}>
         <Card outline color="primary" className="align-center">
-          
-              <AddTransaction
-                items={props.items}
-                addExpense={props.addExpense}
-                resetTransactionForm={props.resetTransactionForm}
-                toggle={toggle}
-              />
-            
+          <AddTransaction
+            items={props.items}
+            addExpense={props.addExpense}
+            resetTransactionForm={props.resetTransactionForm}
+            toggle={toggle}
+          />
         </Card>
       </Collapse>
     </React.Fragment>

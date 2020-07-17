@@ -10,8 +10,7 @@ import {
   CardFooter,
 } from "reactstrap";
 import { Control, LocalForm, Errors } from "react-redux-form";
-import {Link} from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !val || val.length <= len;
@@ -22,10 +21,10 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      users:this.props.users,
+      users: this.props.users,
       email: "",
       password: "",
-      isRegistered:false,
+      isRegistered: false,
       touched: {
         email: false,
         password: false,
@@ -33,13 +32,10 @@ class Login extends Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  authenticateUser(values){
-      // const email=  values.email;
-      // const pwd = values.pwd;
-      // const user = this.state.users.filter(user => user.email === email);
-      
-      
-
+  authenticateUser(values) {
+    // const email=  values.email;
+    // const pwd = values.pwd;
+    // const user = this.state.users.filter(user => user.email === email);
   }
 
   handleSubmit = (values) => {
@@ -52,15 +48,17 @@ class Login extends Component {
       <div className="container container-size">
         <div className="row">
           <div className="col">
-            <Card  style={{ backgroundColor: "#e3f2fd", borderColor: "primary " }} className="card-login">
+            <Card className="card-login">
               <CardTitle>
-                <h4>Welcome!</h4></CardTitle>
-              <CardSubtitle ><h5> Log in to your account</h5></CardSubtitle>
+                <h4 className="welcome">Welcome !</h4>
+              </CardTitle>
+              <CardSubtitle>
+                <h5 className="login-ac"> Log in to your account !</h5>
+              </CardSubtitle>
               <CardBody>
                 <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
-                  <Row className="form-group">
-                   
-                    <Col >
+                  <div className="row justify-content-center form-group">
+                    <div className="col-11">
                       <Control.text
                         model=".email"
                         id="email"
@@ -84,11 +82,10 @@ class Login extends Component {
                           maxLength: "Must be 15 characters or less",
                         }}
                       />
-                    </Col>
-                  </Row>
-                  <Row className="form-group">
-                   
-                    <Col >
+                    </div>
+                  </div>
+                  <div className="row justify-content-center form-group">
+                    <div className="col-11">
                       <Control.text
                         model=".password"
                         id="password"
@@ -114,30 +111,30 @@ class Login extends Component {
                           isNumber: "Must be a number",
                         }}
                       />
-                    </Col>
-                  </Row>
-                  <Row className="form-group">
-                    <Col >
-                      <Button type="submit" color="primary" className="loginButton">
-                      Log In
+                    </div>
+                  </div>
+                  <div className="row justify-content-center form-group">
+                    <div className="col-11 mt-3">
+                      <Button
+                        type="submit"
+                        color="primary"
+                        className="loginButton"
+                      >
+                        Log In
                       </Button>
-                    </Col>
-                  </Row>
+                    </div>
+                  </div>
                 </LocalForm>
+                <h6>
+                  New User?{" "}
+                  <Link to="/registerUser" className="signUp">
+                    Sign Up
+                  </Link>
+                </h6>
               </CardBody>
-              <CardFooter>
-                New User ?  {"   "}
-              
-                <Link to="/registerUser">
-                 Sign Up
-                 </Link>
-             
-
-              </CardFooter>
             </Card>
           </div>
         </div>
-        
       </div>
     );
   }

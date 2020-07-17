@@ -45,7 +45,7 @@ class AddWatchList extends React.Component {
             <Label htmlFor="stock" md={2}>
               Stock
             </Label>
-            <Col md={4}>
+            <Col md={3}>
               <Control.text
                 model=".stock"
                 id="stock"

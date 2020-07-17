@@ -13,12 +13,11 @@ import {
   deleteProduct,
   addExpense,
   deleteItem,
-  addUser
+  addUser,
 } from "../redux/ActionCreators";
 import Income from "./Income";
 import Register from "./RegisterUser";
 import TodoList from "./TodoList";
-
 
 const mapDispatchToProps = {
   addProduct: (stock, limitPrice) => addProduct(stock, limitPrice),
@@ -27,13 +26,13 @@ const mapDispatchToProps = {
     addExpense(date, merchant, item, amount, transactiontype),
   deleteItem: (id) => deleteItem(id),
   resetTransactionForm: () => actions.reset("transactionForm"),
-  addUser: (email,password) => addUser(email,password),
+  addUser: (email, password) => addUser(email, password),
 };
 const mapStateToProps = (state) => {
   return {
     products: state.products,
     items: state.expenses,
-    users:state.users
+    users: state.users,
   };
 };
 
@@ -45,7 +44,7 @@ class Main extends Component {
     };
 
     return (
-      <div>
+      <div className="overlay">
         <Header />
 
         <Switch>
@@ -74,17 +73,26 @@ class Main extends Component {
               />
             )}
           />
-           <Route path="/todo" component={TodoList} />
+          <Route path="/todo" component={TodoList} />
           <Route
             exact
             path="/login"
-            render={() => <Login isRegistered={userIsRegistered} users={this.props.users}/>}
+            render={() => (
+              <Login isRegistered={userIsRegistered} users={this.props.users} />
+            )}
           />
-          <Route exact path="/registerUser" render={() => <Register users={this.props.users} addUser={this.props.addUser}/>} />
+          <Route
+            exact
+            path="/registerUser"
+            render={() => (
+              <Register users={this.props.users} addUser={this.props.addUser} />
+            )}
+          />
           {/* <Route exact path="/marketgraph" render={()=> <MarketGraph stock={stock}/> } /> */}
           <Route exact path="/income" component={Income} />
           <Redirect to="/home" />
         </Switch>
+
         <Footer />
       </div>
     );
